@@ -1,0 +1,11 @@
+install python2.7-dev
+git clone https://github.com/lthiery/SPI-Py.git
+cd SPI-Py
+
+sudo python setup.py install
+git clone https://github.com/mxgxw/MFRC522-python.git
+MFRC522-python
+python Read.py
+
+
+sudo pip install evdev
