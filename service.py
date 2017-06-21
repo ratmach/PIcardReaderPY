@@ -78,7 +78,7 @@ while continue_reading:
 		if status == MIFAREReader.MI_OK:
 			arr = MIFAREReader.MFRC522_Read(8)
 			print(arr)
-			keysim_write("".join(list(map(lambda x: str(x), arr))))
+			keysim_write("".join(list(map(lambda x: str(x), arr))) + "\n")
 			MIFAREReader.MFRC522_StopCrypto1()
 		else:
 			print "Authentication error"
